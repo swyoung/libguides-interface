@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Library Guides - Technology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<link rel="stylesheet" href="guides.css" type="text/css" />  
+
+   <style type="text/css" media="screen, projection">
+a.techguides {
+    -khtml-box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.5);
+    background: #fff;
+}
+a.techguides h2 { font-weight: 600 }
+</style>
+
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+<div id="contain" >
+
+
+ <div id="breadcrumbs">
+ <a itemprop="breadcrumb" href="index.html">
+    Guides
+  </a> >
+  <a itemprop="breadcrumb" href="tech.html">
+    Tech
+  </a> 
+  </div>
+
+<div id="main2">
+   <div id="title"> 
+  <h1><a href="http://www.lib.montana.edu/guides/index.php">Guides</a></h1>
+  <h2>for technology</h2>
+  <p>Research sources and reference tools prepared by our librarians</p>
+   </div>    
+    
+    
+    <div id="menu">
+    <ul id="search">
+    
+        <li>
+  
+          <form name="searchform" method="get" action="http://guides.lib.montana.edu/search.php" autocomplete="on">
+           <input type="text" name="search" id="searchBox" onfocus="enterSearch();" onkeypress="return handleEnterSearch(event,'searchform','document.searchform.submit()');" placeholder="Search for guides" />
+     <button type="submit" id="submit-button" onclick="document.searchform.submit();">Search</button>
+          </form>
+      </li>
+  </ul>
+      <div class="guide-nav">
+        <a href="http://guides.lib.montana.edu/index.php">New Guides</a>
+        <a href="http://www.lib.montana.edu/guides/all.php">All Guides</a>
+      </div>
+  </div>
+
+    
+    
+    <div class="boxes">
+ 
+       <a class="box courseguides" href="./courses.html">
+          <h2>Courses</h2>
+       </a>
+    
+    
+    
+       <a class="box subjectguides" href="./subjects.html">
+          <h2>Subjects</h2>
+       </a>  
+       
+  
+    
+      <a class="box techguides" href="./tech.html">
+          <h2>Tech</h2>
+      </a>
+     
+    
+      <a class="box citationguides" href="./citations.html">
+          <h2>Citations</h2>
+      </a>    
+          
+    </div>
+
+ <div id="content">
+        <?php
+        $newguides = file_get_contents('http://api.libguides.com/api_search.php?iid=812&search=tech%20guide&type=tags&more=false&break=li&target=_self');
+        echo $newguides;
+        ?>
+
+
+   </div>     
+    
+  
+  
+    
+    <div id="footer-guides-beta">
+    </div>
+  
+</body>
+</html>
