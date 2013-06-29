@@ -1,0 +1,770 @@
+/* Base Styles ----------- */
+
+#main2 {
+    background-color: #F0F0F0;
+    opacity: .90;
+    -webkit-border-radius: 6px;
+    -mox-border-radius: 6px;
+    border-radius: 6px;
+}
+#title { background-color: #f0f0f0 }
+#title h1 {
+    font-family: 'trebuchet MS', 'lucida sans';
+    text-decoration: none;
+    color: #003f7f;
+    text-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.4);
+}
+#title a:hover { text-decoration: none }
+#title h2 {
+    font-family: 'trebuchet MS', 'lucida sans';
+    text-decoration: none;
+    color: #003f7f;
+    text-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.4);
+}
+#title a {
+    color:#003f7f;
+}
+#title p {
+    color: #003f7f;
+    text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1);
+    font-family: 'trebuchet MS', 'lucida sans';
+}
+#content a:hover {
+    border-bottom: 1px dashed #003f7f;
+    text-decoration: none;
+}
+a, a:visited {text-decoration: none; color:#003f7f;}
+
+/*category boxes*/
+.boxes { margin: 0 auto }
+a.box {
+    background: #f8f8f8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.5);
+    -khtml-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.5);
+}
+a.box:hover {
+    box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.5);
+    -khtml-box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.1);
+    background: #fff;
+    text-decoration:none;
+}
+a.box h2 {
+    text-align: center;
+    font-family: 'trebuchet MS', 'lucida sans';
+    font-weight: normal;
+    color: #054b8c;
+    text-decoration: none;
+
+}
+a.box h2:hover { font-weight: 600 }
+ul#guides { list-style: none }
+/*search*/
+#submit-button {
+    float: left;
+    border: 1px  #054b8c;
+    box-shadow: 0px 0px 4px #003f7f;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-left: 6px;
+    padding: 0 0 0 0;
+    cursor: pointer;
+    color: #054b8c;
+    text-transform: uppercase;
+    background: #f8f8f8;
+    border-radius: 3px 3px 3px 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    font-weight: bold;
+    font-family: 'lucida sans', 'trebuchet MS', 'Tahoma';
+}
+#submit-button:hover {
+    background: #fff;
+    border: 1px #003f7f;
+    box-shadow: 0px 0px 6px #003f7f;
+}
+#submit-button:-moz-focus-inner {
+    /* remove extra button spacing for Mozilla Firefox */
+    float: left;
+    border: 0;
+    padding: 0;
+}
+#searchBox {
+    color: #054b8c;
+    float: left;
+    background-color: #f8f8f8;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    font-family: 'trebuchet MS', 'lucida sans';
+    padding: 4px;
+    padding-left: 8px;
+    margin-right: 6px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0px 0px 6px #003f7f;
+    -webkit-box-shadow: 0px 0px 6px #003f7f;
+    box-shadow: 0px 0px 6px #003f7f;
+}
+ul#search {
+    float: left;
+    list-style: none;
+    text-align: left;
+    -moz-border-radius-bottomleft: 7px;
+    -moz-border-radius-bottomright: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+/*New Guides/All Guides*/
+.guide-nav,
+.guide-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.guide-nav {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.guide-nav {
+    font-weight: bold;
+    display: table;
+    padding: 0;
+    line-height: 1.45;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.5), inset 0 1px 1px hsla(0, 0%, 0%, 0.5);
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.guide-nav a {
+    display: block;
+    display: table-cell;
+    font-weight: 600;
+    line-height: 1.45;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #054b8c;
+    background-color: rgba(215, 215, 215, .5);
+}
+.guide-nav a:hover {
+    text-decoration: none;
+    color: #003f7f;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.5), inset 0 1px 1px hsla(0, 0%, 0%, 0.5);
+}
+#footer-guides-beta {
+    text-align: center;
+    font-family: 'trebuchet MS', 'lucida sans';
+    padding: 20px 0px 20px 0px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px #003f7f solid;
+    background: #f0f0f0;
+    opacity: .9;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+
+/* responsive styles----------------**/
+
+/* Desktops largescreen ----------- */
+@media (min-width:1531px) { 
+    #main2 { margin-top: 80px }
+    #title {
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: 80px;
+        padding-top: 30px;
+    }
+    #breadcrumbs {
+    margin-top:20px;
+    margin-bottom:-60px;
+    }
+    a[itemprop="breadcrumb"] {
+    font-size:20px;
+    font-family: 'trebuchet MS', 'lucida sans';
+    margin-bottom:-20px;
+    }
+    #title h1 {
+        margin-left: 30px;
+        margin-top: 5px;
+        padding-top: 15px;
+        font-size: 80px;
+    }
+    #title h2 {
+        margin-top: -76px;
+        margin-left: 290px;
+        padding-top: 15px;
+        font-size: 40px;
+    }
+    #title p {
+        margin: -10px 0px -5px 80px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    /*category boxes*/
+    .boxes { 
+        max-width: 97%;
+        margin-left: 5%; }
+    a.box {
+        height: 80px;
+        max-width: 250px;
+        min-width: 100px;
+        width: 100%;
+        margin-left: 3%;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    a.box:hover {
+        -khtml-box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.5);
+    }
+    a.box h2 { margin-top: 10px;
+               font-size: 46px
+    }
+    /*search*/
+    #submit-button {
+        margin-top: 34px;
+        margin-right: 60px;
+        height: 32px;
+        width: 100px;
+        font-size: 18px;
+    }
+    #searchBox {
+        width: 400px;
+        height: 30px;
+        font-size: 24px;
+        margin-left: 180px;
+        margin-top: 30px;
+    }
+    ul#search { padding: 20px 0px 30px 40px }
+    /*New Guides/All Guides*/
+    .guide-nav {
+        display: inline-block;
+        margin: 66px 0 70px 60px;
+    }
+    .guide-nav a {
+        padding: 12px 15px;
+        font: 20px 'trebuchet MS', 'lucida sans';
+    }
+    .guide-nav a:hover { font: 20px 'trebuchet MS', 'lucida sans' }
+    #footer-guides-beta { font-size: 16px }
+    #content li {
+        font: 24px 'trebuchet MS', 'lucida sans';
+        list-style: none;
+        padding-left: 70px;
+        padding-bottom: 5px;
+        line-height: 1.5;
+    }
+    #content p.title {
+        font: 34px 'trebuchet MS', 'lucida sans';
+        color: #003f7f;
+        padding-left: 50px;
+    }
+    .libguides_api_list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        width: 98%;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        text-indent: -30px;
+    }
+}
+/* Desktops regular screen ----------- */
+@media (min-width:1025px) and (max-width: 1530px) { 
+    #main2 {
+        margin: 40px;
+        margin-top: 90px;
+    }
+    #breadcrumbs {
+    margin:20px 0px -70px 40px;
+    }
+    a[itemprop="breadcrumb"] {
+    font-size:18px;
+    font-family: 'trebuchet MS', 'lucida sans';
+    }
+    #title {
+        margin: -20px 30px 30px 40px;
+        padding-top: 30px;
+        width: 500px;
+    }
+    #title h1 { 
+        font-size: 70px;
+        margin-left:20px; 
+    }
+    #title h2 {
+        margin-top: -56px;
+        margin-left: 240px;
+        font-size: 36px;
+    }
+    #title p {
+        width: 600px;
+        margin: -10px 0px -5px 80px;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    /*Category boxes*/
+    .boxes { 
+        max-width: 920px;
+        margin-top:40px;
+        margin-bottom:90px;
+    }
+    a.box {
+        height: 70px;
+        max-width: 195px;
+        min-width: 50px;
+        width: 90%;
+        margin: 1.5%;
+    }
+    a.box:hover {
+        -khtml-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.5);
+    }
+    a.box h2 {
+        margin-top: 8px;
+        text-align: center;
+        font-size: 38px 
+    }
+    .courseguides { margin-left: 2% }
+    /*search*/
+    #menu {
+        width:900px;
+        margin:0 auto;
+    }
+    #submit-button {
+        margin-top: 32px;
+        margin-right: 50px;
+        height: 30px;
+        width: 80px;
+        font-size: 16px;
+    }
+    #searchBox {
+        width: 300px;
+        height: 24px;
+        font-size: 20px;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    ul#search {
+        padding: 20px 20px 30px 0;
+        margin-top: 5px;
+    }
+    /*New Guides/All Guides*/
+    .guide-nav {
+        display: inline-block;
+        font-size: 24px;
+        margin: 54px 0 50px 50px;
+    }
+    .guide-nav a {
+        padding: 11px 13px;
+        font: 16px 'trebuchet MS', 'lucida sans';
+    }
+    .guide-nav a:hover { font: 16px 'trebuchet MS', 'lucida sans' }
+    #footer-guides-beta { font-size: 14px }
+    #content li {
+        font: 20px 'trebuchet MS', 'lucida sans';
+        list-style: none;
+        margin-left: 18%;
+        margin-right: 5%;
+        padding-bottom: 5px;
+        line-height: 1.5;
+    }
+    #content p.title {
+        font: 30px 'trebuchet MS', 'lucida sans';
+        color: #003f7f;
+        padding-left: 40px;
+    }
+    .libguides_api_list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        width: 98%;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        text-indent: -20px;
+    }
+}
+/* tablets ----------- */
+@media (min-width: 768px) and (max-width: 1024px) { 
+    #main2 {
+        margin: 5%;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    #ask {margin-right:50px;}
+    #breadcrumbs {
+    margin:16px 0px -44px 50px;
+    }
+    #breadcrumbs a {
+    font-size:16px;
+    font-family: 'trebuchet MS', 'lucida sans';
+    }
+    a[itemprop="breadcrumb"] {
+    font-size:16px;
+    font-family: 'trebuchet MS', 'lucida sans';
+    }
+    #title { padding: 20px 10px 0 40px }
+    #title h1 {
+        padding-top: 10px;
+        text-decoration: none;
+        font-size: 50px;
+    }
+    #title h2 {
+        margin-top: -44px;
+        margin-left: 170px;
+        font-size: 30px;
+    }
+    #title p {
+        margin: -12px 0px -5px 56px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    /*category boxes*/
+    .boxes { max-width: 88% }
+    a.box {
+        height: 60px;
+        max-width: 170px;
+        min-width: 44px;
+        width: 86%;
+        margin: 1.5%;
+        margin-bottom: 70px;
+        
+    }
+    a.box:hover {
+        -khtml-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.5);
+    }
+    a.box h2 {
+        text-align: center;
+        margin-top: 8px;
+        font-size: 32px 
+    }
+    ul#guides { list-style: none }
+    /*search*/
+    #submit-button {
+        margin-top: 22px;
+        margin-right: 50px;
+        height: 22px;
+        width: 60px;
+        font-size: 12px;
+    }
+    #searchBox {
+        width: 180px;
+        height: 16px;
+        font-size: 17px;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    ul#search {
+        padding: 40px 0px 30px 0px;
+        margin-top: 5px;
+    }
+    /*New Guides/All Guides*/
+    .guide-nav {
+        font-size: 18px;
+        display: inline-block;
+        margin: 62px 0 60px 30px;
+    }
+    .guide-nav a {
+        padding: 9px 11px;
+        font: 14px 'trebuchet MS', 'lucida sans';
+    }
+    .guide-nav a:hover { font-size: 14px }
+    #footer-guides-beta { font-size: 11px }
+    #content li {
+        font: 16px 'trebuchet MS', 'lucida sans';
+        list-style: none;
+        padding-left: 40px;
+        padding-bottom: 5px;
+        line-height: 1.5;
+    }
+    #content p.title {
+        font: 24px 'trebuchet MS', 'lucida sans';
+        color: #003f7f;
+        padding-left: 20px;
+    }
+    .libguides_api_list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        width: 98%;
+        padding-bottom: 30px;
+        padding-left:20px;
+        text-indent:-20px;
+    }
+}
+
+/* desktops small ----------- */
+@media (min-width: 40px) and (max-width:767px) { 
+   
+    #breadcrumbs {
+        width:320px;
+        margin:15px 0px -30px 30px;
+    }
+    a[itemprop="breadcrumb"] {
+    font-size:14px;
+    font-family: 'trebuchet MS', 'lucida sans';
+    }
+
+    #main2 {
+        width: 80%;
+        margin:5%;
+        margin-top: 40px;
+        -webkit-border-radius: 4px;
+        -mox-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+
+    #title {
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+    #title h1 {
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-left: 28px;
+        font-size: 48px;
+    }
+    #title h2 {
+        margin-top: -60px;
+        margin-left: 180px;
+        padding-top: 15px;
+        font-size: 26px;
+    }
+    #title p {
+        width: 250px;
+        margin: -12px 0px -5px 40px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        line-height: 1;
+    }
+    /*Category boxes*/
+    .boxes {
+        max-width: 86%;
+        margin-top: 30px;
+    }
+    a.box {
+        height: 60px;
+        max-width: 190px;
+        min-width: 44px;
+        width: 100%;
+        margin: 1%;
+        margin-bottom: 30px;
+        background: #f8f8f8;
+        display: inline-block;
+        -khtml-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+    }
+    a.box:hover {
+        -khtml-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.5);
+    }
+    a.box h2 { text-align: center;
+               font-size: 38px;
+               padding-top:4px; 
+               margin: 0;
+    }
+    /*search*/
+    #submit-button {
+        margin-right: 10px;
+        margin-top: 42px;
+        height: 20px;
+        width: 56px;
+        font-size: 10px;
+    }
+    #searchBox {
+        width: 150px;
+        height: 14px;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        margin-left:-20px;
+    }
+    /*New Guides/All Guides*/
+    ul#search { margin-left: 30px }
+    .guide-nav {
+        font-size: 16px;
+        display: inline-block;
+        margin-left:20%;
+    }
+    .guide-nav a {
+        padding: 6px 8px;
+        font: 12px 'trebuchet MS', 'lucida sans';
+    }
+    .guide-nav a:hover { font-size: 12px }
+    #content li {
+        font: 16px 'trebuchet MS', 'lucida sans';
+        list-style: circle inside;
+        padding-left: 36px;
+        padding-bottom: 5px;
+    }
+    #content p.title {
+        font: 18px 'trebuchet MS', 'lucida sans';
+        color: #003f7f;
+        padding-left: 10px;
+    }
+    .libguides_api_list {
+        width: 98%;
+        padding-bottom: 30px;
+        text-indent:-18px;
+    }
+    #footer-guides-beta {margin:0 auto;font-size:12px;}
+    #footer-guides-beta img {display:none;}
+}
+
+
+/* phones ----------- */
+@media (max-device-width:640px) { 
+
+    #ask {position:absolute; width: 200px; margin: 12px 30px 0px 0px; font-size: 24px; font-weight: 500; font-family: sans-serif; text-shadow: 1px 1px 1px #CCCCCC; right:0px;}
+    #ask a img{display:none;}
+
+    #breadcrumbs {
+        width:320px;
+        margin:30px -10px -20px 50px;
+    }
+    #breadcrumbs a {
+        font-size:26px;
+        font-family: 'trebuchet MS', 'lucida sans';
+    }
+    a[itemprop="breadcrumb"] {
+    font-size:26px;
+    font-family: 'trebuchet MS', 'lucida sans';
+    }
+
+    #main2 {
+        width: 100%;
+        margin:5%;
+        margin-top: 60px;
+        -webkit-border-radius: 4px;
+        -mox-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+
+    #title {
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+    #title h1 {
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-left: 28px;
+        font-size: 90px;
+    }
+    #title h2 {
+        margin-top: -100px;
+        margin-left: 330px;
+        padding-top: 15px;
+        font-size: 60px;
+    }
+    #title p {
+        width:710px;
+        margin: -5px 0px -5px 40px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        line-height: 1;
+    }
+    /*Category boxes*/
+    .boxes {
+        max-width: 67%;
+        margin-top: 60px;
+    }
+    a.box {
+        height: 160px;
+        max-width: 660px;
+        width: 100%;
+        margin: 2%;
+        margin-left:1%;
+        margin-bottom: 30px;
+        background: #f8f8f8;
+        display: inline-block;
+        -khtml-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+    }
+    a.box:hover {
+        -khtml-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.5);
+    }
+    a.box h2 { text-align: center;
+               font-size: 100px; 
+               padding-top:10px;
+    }
+    /*search*/
+    #submit-button {
+        margin-right: 10px;
+        margin-top: 28px;
+        height: 56px;
+        width: 186px;
+        font-size: 34px;
+    }
+    #searchBox {
+        width: 450px;
+        height: 60px;
+        font-size: 38px;
+        margin-left: 62px;
+        margin-top: 20px;
+        margin-bottom:60px;
+    }
+    /*New Guides/All Guides*/
+    ul#search { margin-left: 30px }
+    .guide-nav { display: none }
+    .guide-nav { font-size: 18px }
+    .guide-nav a {
+        padding: 20px 32px;
+        font-size: 36px;
+    }
+    .guide-nav a:hover { font: 14px }
+    
+    #content li {
+        font: 50px 'trebuchet MS', 'lucida sans';
+        list-style: circle inside;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    #content p.title {
+        font: 18px 'trebuchet MS', 'lucida sans';
+        color: #003f7f;
+        padding-left: 10px;
+    }
+    #boxes a.citationguides {margin-bottom:30px;}
+    .libguides_api_list {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        width: 98%;
+        padding-bottom: 30px;
+        text-indent:-44px;
+    }
+
+    #footer-guides-beta { 
+        font-size: 22px; 
+        width: 95%; 
+        margin:0 auto; 
+        line-height:1.5;
+        margin:20px; }
+}
